@@ -14,11 +14,11 @@ note:
   - 使用混合精度进行训练
   - 减小输入图像尺寸
 
-| 数据集        | 模型架构       | 参数    | 任务           | 耗时                      | device      | CPU/GPU  | acc  |
-| ------------- | -------------- | ------- | -------------- | ------------------------- | ----------- | -------- | ---- |
-| imagenet-mini | resnet-18-精简 | 20.36MB | classification | 3405.97s/68.12s per epoch | 3060 laptop | 40%/100% | 17%  |
-| imagenet-mini | resnet-18-精简 | 44.1MB  | classification | 3635.38s/121.18 per epoch | 3060 laptop | 40%/100% | 17%  |
-|               |                |         |                |                           |             |          |      |
+| 数据集        | 模型架构       | 参数    | 任务           | 耗时                      | device      | CPU/GPU  | acc    |
+| ------------- | -------------- | ------- | -------------- | ------------------------- | ----------- | -------- | ------ |
+| imagenet-mini | resnet-18-精简 | 20.36MB | classification | 3405.97s/68.12s per epoch | 3060 laptop | 40%/100% | 17%    |
+| imagenet-mini | resnet-18-精简 | 44.1MB  | classification | 3635.38s/121.18 per epoch | 3060 laptop | 40%/100% | 19.35% |
+|               |                |         |                |                           |             |          |        |
 
 
 
