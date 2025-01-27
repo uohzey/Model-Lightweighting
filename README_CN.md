@@ -12,7 +12,6 @@
 ---
 
 ## 📌 核心要点
-
 - 创建DataLoader时：
   - `shuffle=True`时可设置`num_workers`
   - `shuffle=False`时无需设置`num_workers`
@@ -44,7 +43,6 @@
 ---
 
 ## 🛠️ 使用说明
-
 1. 替换所有`yourusername`为GitHub用户名
 2. 添加`requirements.txt`和`LICENSE`文件
 3. Star增长图会在项目公开后自动生效
@@ -52,8 +50,7 @@
 ---
 
 ## 📜 更新日志
-
-- 2025/01/26: ResNet-18精简版基准测试
+- 2025/01/26: 发布ResNet-18精简版基准测试
 - 2025/01/25: 项目初始化
 
 [![Star History Chart](https://api.star-history.com/svg?repos=uohzey/model-lightweighting&type=Date)](https://star-history.com/#yourusername/model-lightweighting)
