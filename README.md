@@ -7,7 +7,7 @@
 
 > 模型轻量化实践项目 | 提供精简模型实现与训练优化方案
 
-![Star Growth Chart](https://starchart.cc/uohzey/model-lightweighting.svg)
+[![Stargazers over time](https://starchart.cc/uohzey/Model-Lightweighting.svg?variant=adaptive)](https://starchart.cc/uohzey/Model-Lightweighting)
 
 ---
 
@@ -47,7 +47,8 @@
 
 ## 📜 更新日志
 
-- 2025/01/26: ResNet-18 微调版基准测试
+- 2025/01/30:DETR 模型学习
+- 2025/01/27: ResNet-18 微调版基准测试
 - 2025/01/26: ResNet 精简版基准测试
 - 2025/01/25: 项目初始化
 
