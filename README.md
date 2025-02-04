@@ -11,6 +11,25 @@
 
 ---
 
+## 🛠️ 环境配置指南
+
+### 1. 创建 Conda 环境
+
+使用以下命令创建一个名为 `torch` 的 Python 3.10.16 环境：
+
+```bash
+conda create -n torch python=3.10.16 -y
+conda activate torch
+```
+
+### 2. 安装依赖
+
+根据 `requirements.txt` 安装依赖包，并指定 CUDA 12.1 版本：
+
+```bash
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu121
+```
+
 ## 📌 核心要点
 
 - 创建DataLoader时：
@@ -24,6 +43,18 @@
   - 减小输入图像尺寸
 
 ---
+
+## 📥 数据集下载
+
+以下是项目中使用的数据集下载链接：
+
+| 数据集名称    | 下载链接                                                     |
+| ------------- | ------------------------------------------------------------ |
+| COCO-2017     | [COCO-2017 Dataset](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset) |
+| ImageNet-Mini | [ImageNet-Mini Dataset](https://www.kaggle.com/datasets/ifigotin/imagenetmini-1000) |
+| ImageNet-Tiny | [ImageNet-Tiny Dataset](https://www.kaggle.com/datasets/akash2sharma/tiny-imagenet) |
+
+> 注意：下载数据集需要 Kaggle 账号，请先注册并登录。
 
 ## 📊 实验结果
 
@@ -47,10 +78,11 @@
 
 ## 📜 更新日志
 
+- 2025/02/04:环境配置
 - 2025/01/30:DETR 模型学习
 - 2025/01/27: ResNet-18 微调版基准测试
 - 2025/01/26: ResNet 精简版基准测试
 - 2025/01/25: 项目初始化
 
-[![Star History Chart](https://api.star-history.com/svg?repos=uohzey/model-lightweighting&type=Date)](https://star-history.com/#uohzey/model-lightweighting)
+[![Star History Chart](https://api.star-history.com/svg?repos=uohzey/model-lightweighting&type=Date)](https://star-history.com/#uohzey/model-lightweighting&Date)
 
