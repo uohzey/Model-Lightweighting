@@ -46,23 +46,37 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 
 ## 📥 数据集下载
 
-以下是项目中使用的数据集下载链接：
+以下是项目中使用的数据集：
 
-| 数据集名称    | 下载链接                                                     |
-| ------------- | ------------------------------------------------------------ |
-| COCO-2017     | [COCO-2017 Dataset](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset) |
-| ImageNet-Mini | [ImageNet-Mini Dataset](https://www.kaggle.com/datasets/ifigotin/imagenetmini-1000) |
-| ImageNet-Tiny | [ImageNet-Tiny Dataset](https://www.kaggle.com/datasets/akash2sharma/tiny-imagenet) |
+- **COCO-2017**
+  [COCO-2017 Dataset](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)
 
-> 注意：下载数据集需要 Kaggle 账号，请先注册并登录。
+- **ImageNet-Mini**
+  [ImageNet-Mini Dataset](https://www.kaggle.com/datasets/ifigotin/imagenetmini-1000)
+
+- **ImageNet-Tiny**
+  [ImageNet-Tiny Dataset](https://www.kaggle.com/datasets/akash2sharma/tiny-imagenet)
+
+- **emotion**
+
+  ```python
+  from datasets import load_dataset
+  
+  emotions = load_dataset("emotion")
+  ```
+
+> 注意：部分下载数据集需要 Kaggle 账号，请先注册并登录。
 
 ## 📊 实验结果
 
-| 数据集        | 模型架构            | 参数    | 任务           | 耗时                       | device      | CPU/GPU  | acc    |
-| ------------- | ------------------- | ------- | -------------- | -------------------------- | ----------- | -------- | ------ |
-| imagenet-mini | resnet-01           | 20.36MB | classification | 3405.97s/68.12s per epoch  | 3060 laptop | 40%/100% | 17%    |
-| imagenet-mini | resnet-02           | 44.1MB  | classification | 3635.38s/121.18s per epoch | 3060 laptop | 40%/100% | 19.35% |
-| imagenet-mini | resnet-18-fine_tune | 44.6MB  | classification | 8594.05s/859.4s per epoch  | 3060 laptop |          | 68.82% |
+| 数据集        | 模型架构             | 参数    | 任务                  | 耗时                       | device      | CPU/GPU  | acc    |
+| ------------- | -------------------- | ------- | --------------------- | -------------------------- | ----------- | -------- | ------ |
+| imagenet-mini | resnet-01            | 20.36MB | imaghe classification | 3405.97s/68.12s per epoch  | 3060 laptop | 40%/100% | 17%    |
+| imagenet-mini | resnet-02            | 44.1MB  | image classification  | 3635.38s/121.18s per epoch | 3060 laptop | 40%/100% | 19.35% |
+| imagenet-mini | resnet18-fine-tune   | 44.6MB  | image classification  | 8594.05s/859.4s per epoch  | 3060 laptop |          | 68.82% |
+| emotion       | distilbert-fine-tune | 268 MB  | text classification   | 305s/61s per epoch         | Tesla P100  |          | 89%    |
+
+
 
 ---
 
@@ -74,15 +88,24 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 
 ### ResNet-18微调版 (44.95MB)
 
+### distilbert微调版(268MB)
+
 ---
 
 ## 📜 更新日志
 
-- 2025/02/04:环境配置
-- 2025/01/30:DETR 模型学习
+- 2025/02/12: Natural Language Processing with Transformer: Text Classification
+- 2025/02/04: 环境配置
+- 2025/01/30: DETR 模型学习
 - 2025/01/27: ResNet-18 微调版基准测试
 - 2025/01/26: ResNet 精简版基准测试
 - 2025/01/25: 项目初始化
 
 [![Star History Chart](https://api.star-history.com/svg?repos=uohzey/model-lightweighting&type=Date)](https://star-history.com/#uohzey/model-lightweighting&Date)
+
+```python
+from datasets import load_dataset
+
+emotions = load_dataset("emotion")
+```
 
