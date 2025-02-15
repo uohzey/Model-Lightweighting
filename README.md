@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-green)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-red)](https://pytorch.org/)
-[![Stars](https://img.shields.io/github/stars/uohzey/model-lightweighting?style=social)](https://github.com/yourusername/model-lightweighting)
+[![Stars](https://img.shields.io/github/stars/uohzey/model-lightweighting?style=social)](https://github.com/uohzey/model-lightweighting)
 
 > 模型轻量化实践项目 | 提供精简模型实现与训练优化方案
 
@@ -69,12 +69,12 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 
 ## 📊 实验结果
 
-| 数据集        | 模型架构             | 参数    | 任务                  | 耗时                       | device      | CPU/GPU  | acc    |
-| ------------- | -------------------- | ------- | --------------------- | -------------------------- | ----------- | -------- | ------ |
-| imagenet-mini | resnet-01            | 20.36MB | imaghe classification | 3405.97s/68.12s per epoch  | 3060 laptop | 40%/100% | 17%    |
-| imagenet-mini | resnet-02            | 44.1MB  | image classification  | 3635.38s/121.18s per epoch | 3060 laptop | 40%/100% | 19.35% |
-| imagenet-mini | resnet18-fine-tune   | 44.6MB  | image classification  | 8594.05s/859.4s per epoch  | 3060 laptop |          | 68.82% |
-| emotion       | distilbert-fine-tune | 268 MB  | text classification   | 305s/61s per epoch         | Tesla P100  |          | 89%    |
+| 数据集        | 模型架构             | 参数    | 任务                  | device      | acc    | huggingface_hub                                              |
+| ------------- | -------------------- | ------- | --------------------- | ----------- | ------ | ------------------------------------------------------------ |
+| imagenet-mini | resnet-01            | 20.36MB | imaghe classification | 3060 laptop | 17%    |                                                              |
+| imagenet-mini | resnet-02            | 44.1MB  | image classification  | 3060 laptop | 19.35% |                                                              |
+| imagenet-mini | resnet18-fine-tune   | 44.6MB  | image classification  | 3060 laptop | 68.82% |                                                              |
+| emotion       | distilbert-fine-tune | 268 MB  | text classification   | Tesla P100  | 89%    | [distilbert-base-uncased-finetuned-emotion ](https://huggingface.co/uohzey/distilbert-base-uncased-finetuned-emotion) |
 
 
 
@@ -94,6 +94,7 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 
 ## 📜 更新日志
 
+- 2025/02/14: Natural Language Processing with Transformer: Transformer Anatomy
 - 2025/02/12: Natural Language Processing with Transformer: Text Classification
 - 2025/02/04: 环境配置
 - 2025/01/30: DETR 模型学习
@@ -102,10 +103,4 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 - 2025/01/25: 项目初始化
 
 [![Star History Chart](https://api.star-history.com/svg?repos=uohzey/model-lightweighting&type=Date)](https://star-history.com/#uohzey/model-lightweighting&Date)
-
-```python
-from datasets import load_dataset
-
-emotions = load_dataset("emotion")
-```
 
