@@ -5,7 +5,19 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-red)](https://pytorch.org/)
 [![Stars](https://img.shields.io/github/stars/uohzey/model-lightweighting?style=social)](https://github.com/uohzey/model-lightweighting)
 
-> 模型轻量化实践项目 | 提供精简模型实现与训练优化方案
+## 📜 更新日志
+
+- 2025/02/16: Natural Language Processing with Transformer: Multilingual Named Entity Recognition - Error Analysis & Cross-Lingal Transfer / Hugging Face **Agent Course** Certification
+- 2025/02/15: Natural Language Processing with Transformer: Multilingual Named Entity Recognition
+- 2025/02/14: Natural Language Processing with Transformer: Transformer Anatomy
+- 2025/02/12: Natural Language Processing with Transformer: Text Classification
+- 2025/02/04: 环境配置
+- 2025/01/30: DETR 模型学习
+- 2025/01/27: ResNet-18 微调版基准测试
+- 2025/01/26: ResNet 精简版基准测试
+- 2025/01/25: 项目初始化
+
+> 模型轻量化实践 | 精简模型实现与训练优化方案 | 学习日记
 
 [![Stargazers over time](https://starchart.cc/uohzey/Model-Lightweighting.svg?variant=adaptive)](https://starchart.cc/uohzey/Model-Lightweighting)
 
@@ -95,16 +107,11 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 
 ---
 
-## 📜 更新日志
-
-- 2025/02/15: Natural Language Processing with Transformer: Multilingual Named Entity Recognition
-- 2025/02/14: Natural Language Processing with Transformer: Transformer Anatomy
-- 2025/02/12: Natural Language Processing with Transformer: Text Classification
-- 2025/02/04: 环境配置
-- 2025/01/30: DETR 模型学习
-- 2025/01/27: ResNet-18 微调版基准测试
-- 2025/01/26: ResNet 精简版基准测试
-- 2025/01/25: 项目初始化
+- 
 
 [![Star History Chart](https://api.star-history.com/svg?repos=uohzey/model-lightweighting&type=Date)](https://star-history.com/#uohzey/model-lightweighting&Date)
+
+## 🎓 **certificate **
+
+![FOA](.\images\FOA Unit1.webp)
 
